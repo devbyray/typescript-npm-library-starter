@@ -63,6 +63,8 @@ In the `.prettierrc` you can change the settings to your preferences.
 
 For running tests against your code we included [Jest](https://jestjs.io/). Jest is a JavaScript/TypeScript testing framework with a focus on simplicity, that's why we like it so much!
 
+Run `npm run test` for 1 time only run. If you want to use the Jest watch option, run `npm run test:watch`.
+
 ## Example readme content
 
 ## Installation
