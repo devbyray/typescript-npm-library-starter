@@ -1,6 +1,6 @@
 {
   "name": "typescript-npm-library-starter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Starter for a NPM package build with TypeScript goodness 🚀",
   "scripts": {
     "test": "jest --config jestconfig.json",
@@ -8,11 +8,12 @@
     "preversion": "npm run lint && npm run tscov",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
-    "prebuild": "rm -rf ./dist && npm test && npm run lint && npm run format && npm run tscov",
+    "prebuild": "npx rimraf ./dist && npm test && npm run lint && npm run format && npm run tscov",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
-    "tscov": "tscov -m 90"
+    "tscov": "tscov -m 90",
+    "cgx": "cgx"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,7 @@
     "cgx": "^1.10.0",
     "jest": "^25.1.0",
     "prettier": "^1.19.1",
+    "rimraf": "^3.0.1",
     "ts-jest": "^25.0.0",
     "tslint": "^6.0.0",
     "tslint-config-prettier": "^1.18.0",
