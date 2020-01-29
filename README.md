@@ -20,6 +20,15 @@ Just click on the green button to create your repo based on this one. It's just 
 - NodeJS >= v13.3
 - NPM >= v6.13.6
 
+## Workflow
+
+1. Build your functionality
+2. Run a build with `npm run build`
+3. Commit changes
+4. Create a git tag
+5. Run `npm run version` to push all commits and tags
+6. Run `npm publish` to run all linting, formatting, build and publish it on NPM
+
 ## Dependencies
 
 ### Generate recommended documentation/files to improve contribution
