@@ -8,7 +8,7 @@
     "preversion": "npm run lint && npm run tscov",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
-    "prebuild": "rm -rf ./dist",
+    "prebuild": "rm -rf ./dist && npm test && npm run lint && npm run format && npm run tscov",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
