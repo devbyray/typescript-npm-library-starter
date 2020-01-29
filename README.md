@@ -6,13 +6,15 @@ Check the [example NPM package](https://www.npmjs.com/package/typescript-npm-lib
 
 ## How to use
 
-If you want to create a small or big JavaScript/TypeScript library to push it to NPM (or other platform). You don't want to worry about setting up a development envoirment and just want to start building as soon as possible.
+If you want to create a small or big JavaScript/TypeScript library to push it to NPM (or other platform). You don't want to worry about setting up a development environment and just want to start building as soon as possible.
 
 This repo is a template for your library and ready to publish on NPM.
 
 ![](./github-template-repo.png)
 
 Just click on the green button to create your repo based on this one. It's just that easy 👍
+
+Clone it to your computer, run `npm install` and start building!
 
 ## Requirements
 
